@@ -6,8 +6,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class attr extends Model
 {
-    protected $table="attr";
-    public $timestamps=false;
-
-
+    protected $table = 'attr';
+    public $timestamps = false;
 }

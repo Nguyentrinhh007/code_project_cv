@@ -24,14 +24,14 @@ class EditValueRequest extends FormRequest
     public function rules()
     {
         return [
-            'value_name'=>'required|unique:values,value,'.$this->id,
+            'value_name' => 'required|unique:values,value,'.$this->id.',id',
         ];
     }
     public function messages()
     {
         return [
-            'value_name.required'=>'Giá trị của thuộc tính không được để trống!',
-            'value_name.unique'=>'Giá trị của thuộc tính Đã Tồn tại!',
+            'value_name.required' => 'Tên giá trị thuộc tính không được để trống!',
+            'value_name.unique'  => 'Tên giá trị thuộc tính đã tồn tại!',
         ];
     }
 }

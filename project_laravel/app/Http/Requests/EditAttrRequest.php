@@ -24,14 +24,14 @@ class EditAttrRequest extends FormRequest
     public function rules()
     {
         return [
-            'attr_name'=>'required|unique:attribute,name,'.$this->id,
+            'attr_name' => 'required|unique:attribute,name,'.$this->id,
         ];
     }
     public function messages()
     {
         return [
-            'attr_name.required'=>'Tên thuộc tính không được để trống!',
-            'attr_name.unique'=>'Tên Thuộc tính đã tồn tại!',
+            'attr_name.required' => 'Tên thuộc tính không được để trống!',
+            'attr_name.unique'  => 'Tên thuộc tính đã tồn tại!',
         ];
     }
 }

@@ -21,5 +21,5 @@ class category extends Seeder
             ['id'=>6,'name'=>'Áo Nữ','parent'=>5],
             ['id'=>7,'name'=>'Quần Nữ','parent'=>5],
         ]);
-   }
+    }
 }

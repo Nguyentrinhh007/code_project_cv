@@ -24,14 +24,14 @@ class AddAttrRequest extends FormRequest
     public function rules()
     {
         return [
-            'attr_name'=>'required|unique:attribute,name'
+            'attr_name' => 'required|unique:attribute,name'
         ];
     }
     public function messages()
     {
         return [
-            'attr_name.required'=>'Tên thuộc tính không được để trống! ',
-            'attr_name.unique'=>'Tên thuộc tính đã tồn tại',
+            'attr_name.required' => 'Tên thuộc tính không được để trống!',
+            'attr_name.unique' => 'Tên thuộc tính không được trùng!'
         ];
     }
 }
